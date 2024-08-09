@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #fcba7f;
+}
+.cookie-container {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  max-width: 365px;
+  background: #fff;
+  padding: 25px 25px 30px 25px;
+  border-radius: 50% 50% 50% 50% / 80% 80% 20% 20%;
+  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+.cookie-container.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+::selection {
+  color: #fff;
+  background: #fcba7f;
+}
+.cookie-container img {
+  max-width: 90px;
+}
+.cookie-content header {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.cookie-content {
+  margin-top: 0.75rem;
+}
+.cookie-content p {
+  color: #858585;
+  margin: 0.25rem 0 1.25rem 0;
+  font-weight: 500;
+}
+.cookie-content .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons .got-it-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  background: #fcba7f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons button:hover {
+  transform: scale(0.97);
+}
+.buttons .learn-more {
+  font-weight: 700;
+  margin: 0 10px;
+}
+.buttons a {
+  color: #fcba7f;
+}
